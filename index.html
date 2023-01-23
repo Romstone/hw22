@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="core.js" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav">
+        <ul>
+            <li id="productsLink" class="active">Products</li>
+            <li id="addLink">Add product</li>
+            <input type="text" name='search' placeholder="search">
+        </ul>
+    </div>
+    <div id="section">
+        <div class="side-nav" id="side-nav">
+            <ul>
+                <li class="active" data-name="All products">All products</li>
+                <li data-name="Milk">Milk</li>
+                <li data-name="Chocolate">Chocolate</li>
+                <li data-name="Wine">Wine</li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+
+        </div>
+        <form action="#" id="loader">
+            <input class="form-control" type="text" name="id" placeholder="Type id">
+            <input class="form-control" type="text" name="title"
+                   placeholder="Type product title">
+            <input class="form-control" type="text" name="manufc"
+                   placeholder="Type manufacture">
+            <input class="form-control" type="number" name="price" step="0.01"
+                   placeholder="Type price">
+            <select class="form-control" name="prod_type" id="type">
+                <option value="milk">Milk</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="wine">Wine</option>
+            </select>
+            <div id="special">
+                <input class="form-control" type="number" name="fat"
+                       placeholder="Type fat">
+            </div>
+            <button>add</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
