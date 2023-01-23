@@ -1,4 +1,5 @@
-    //elements
+(() => {
+//elements
     const formLoader = document.getElementById('loader');
     const side_nav = document.getElementById('side-nav');
     const prodTab = document.getElementById('productsLink');
@@ -137,3 +138,5 @@
             e.target.classList.add('active');
         }
     });
+})();
+
